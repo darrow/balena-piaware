@@ -1,0 +1,13 @@
+{
+   "tcp_address":"${RECEIVER_HOST}",
+   "tcp_port":"${RECEIVER_PORT}",
+   "select_timeout":"10",
+   "data_upload_interval":"10",
+   "connection_type":"1",
+   "aircraft_timeout":"30",
+   "data_format":"4",
+   "latitude":"${LAT}",
+   "longitude":"${LON}",
+   "google_maps_api_key":"${GOOGLE_MAPS_API_KEY}",
+   "sharecode":"${PLANEFINDER_SHARECODE}"
+}
