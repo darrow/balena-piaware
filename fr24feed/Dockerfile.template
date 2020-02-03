@@ -1,9 +1,9 @@
-FROM balenalib/%%BALENA_ARCH%%-debian:stretch as run
+FROM balenalib/%%BALENA_ARCH%%-debian:buster as run
 
 EXPOSE 8754
 
 RUN apt-get update && \
-	apt-get install -y wget dirmngr gnupg systemd libcap2-bin
+	apt-get install -y apt-utils wget dirmngr gnupg systemd libcap2-bin
 
 WORKDIR /tmp
 # Import GPG key for the APT repository

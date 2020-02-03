@@ -1,7 +1,7 @@
 FROM balenalib/%%BALENA_ARCH%%-debian:buster as run
 
 RUN apt-get update && \
-	apt-get install -y librtlsdr-dev fakeroot dpkg-dev git debhelper libusb-1.0-0-dev pkg-config dh-systemd libncurses5-dev libusb-1.0-0 build-essential cmake libtecla1 libtecla-dev wget doxygen help2man pandoc
+	apt-get install -y apt-utils librtlsdr-dev fakeroot dpkg-dev git debhelper libusb-1.0-0-dev pkg-config dh-systemd libncurses5-dev libusb-1.0-0 build-essential cmake libtecla1 libtecla-dev wget doxygen help2man pandoc
 
 RUN git clone --recursive https://github.com/Nuand/bladeRF.git
 WORKDIR bladeRF
